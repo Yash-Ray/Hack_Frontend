@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+body {
+    background: #00367C;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+#section1 {
+    width: 100vw;
+    height: 100vh;
+}
+.bulb {
+    display: flex;
+    flex-direction: row;
+    display: block;
+    // border: 1px solid red;
+    #bulb-small {
+        display: block;
+        // border: 2px solid red;
+        height: fit-content;
+        width: fit-content;
+        position: absolute;
+        right: 400px;
+        margin-top: -30px;
+        top: -40%;
+        img {
+            height: 400px;
+            width: 300px;
+        }
+    }
+    #bulb-large {
+        display: block;
+        // border: 2px solid yellow;
+        height: fit-content;
+        width: fit-content;
+        position: absolute;
+        right: 0;
+        margin-top: -30px;
+        top: -60%;
+        img {
+            height: 600px;
+            width: 400px;
+            // position: absolute;
+            top: -70%;
+        }
+    }
+}
+
+#center {
+    position: absolute;
+    left: 25%;
+    top: 25%;
+}
+
+#center-rect {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-left: 100px;
+    // border: 2px solid red;
+}
+
+#circle-svg {
+    height: 450px;
+    width: 450px;
+    padding: 10px;
+    border-radius: 100%;
+    background:#001E4D;
+    box-shadow: 4px 4px 7px #00134d;
+    opacity: 0.2;
+    // border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    #mood {
+        height: fit-content;
+        width: fit-content;
+        // border: 2px solid red;
+        svg {
+            height: 330px;
+            width: 330px;
+            padding: 20px;
+            padding-left: 40px;
+            .cls-1 {
+                fill: transparent;
+            }
+            .cls-2 {
+                fill: transparent;
+            }
+            .cls-3 {
+                fill:transparent;
+            }
+            // border: 2px solid red;
+        }
+    }
+}
+
+#herotxt-svg {
+    margin-left: -170px;
+    // padding-bottom: 10px;
+}
+
+#herotxt-svg g path {
+    stroke-dasharray: 5000;
+    stroke-dashoffset: 0;
+    stroke: #9098bd;
+    stroke-width: 10;
+    // fill: #001E4D;
+    fill: none;   
+}
+#anime-main {
+        margin-left: -50px;
+        // border: 2px solid red;
+}
+
+#mood svg {
+    height: 200px;
+    width: 420px;
+    // border: 2px solid red;
+    g {
+        path {
+            -webkit-filter: drop-shadow( -4px -4px 3px rgba(0, 0, 0, .7));
+            filter: drop-shadow( -4px -4px 3px rgba(0, 0, 0, .7));
+        }
+    }
+}
+
+.herotxt {
+    .inner-hero {
+        width: fit-content;
+        height: fit-content;
+        // border: 2px solid yellow;
+        svg {
+            // border: 1px solid red;
+            height: 400px;
+            width: 600px;
+            position: relative;
+            left: -35%;
+            top: 70px;
+            path {
+                -webkit-filter: drop-shadow( 4px 4px 3px rgba(0, 0, 0, .7));
+                filter: drop-shadow( 4px 4px 3px rgba(0, 0, 0, .7));
+            }
+        }
+    }
+}
+
+.gears {
+    .outer {
+        // border: 1px solid red;
+        height: 800px;
+        width: 800px;
+        position: absolute;
+        left: 0%;
+        top: 40%;
+        transform: translate(-50%, 8%);
+        svg {
+            #cls-oo {
+                fill: transparent;
+            }
+            path {
+                -webkit-filter: drop-shadow( 2px 2px 5px rgba(0, 0, 0, .7));
+                filter: drop-shadow( 2px 2px 5px rgba(0, 0, 0, .7));
+            }
+        }
+    }
+    .inner {
+        // border: 2px solid red;
+        height: 400px;
+        width: 400px;
+        position: absolute;
+        left: 0%;
+        top: 67%;
+        transform: translate(-50%, 8%);
+        svg {
+            #cls-ii {
+                fill: transparent;
+            }
+            path {
+                -webkit-filter: drop-shadow( 2px 2px 5px rgba(0, 0, 0, .7));
+                filter: drop-shadow( 2px 2px 5px rgba(0, 0, 0, .7));
+            }
+        }
+    }
+}
