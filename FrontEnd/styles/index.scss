@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    // overflow-x: hidden;
 }
 ::-webkit-scrollbar {
     width: 0px;
@@ -15,15 +16,19 @@ body {
     // flex-direction: column;
 }
 #section1 {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 #section2 {
     height: 100vh;
-    width: 100vw;
-    // background: #000;
+    width: 100%;
+    background: #00367C;
 }
-
+#section3 {
+    height: 100vh;
+    width: 100%;
+    border: 2px solid red;
+}
 #download-btn {
     width: fit-content;
     display: flex;
@@ -209,6 +214,7 @@ body {
     bottom: 9%;
     right: 9%;
     a {
+        opacity: 0;
         i {
             font-size: 50px;
             color: #9098bd;
@@ -254,6 +260,7 @@ body {
         svg {
             #cls-ii {
                 fill: transparent;
+                
             }
             path {
                 -webkit-filter: drop-shadow( 2px 2px 5px rgba(0, 0, 0, .7));
@@ -262,3 +269,58 @@ body {
         }
     }
 }
+
+div.gears2 {
+    position: absolute;
+    // bottom: 0%;
+    // margin-right: -100px;
+    right: 350px;
+    top: 150vh;
+
+    .outer2 {
+        height: fit-content;
+        width: fit-content;
+        svg {
+            #cls-o2 {
+                fill: #f73c57;
+            }
+            path {
+                -webkit-filter: drop-shadow( -2px -2px 5px rgba(0, 0, 0, .7));
+                filter: drop-shadow( -2px -2px 5px rgba(0, 0, 0, .7));
+            }
+        }
+    }
+    #Layer_ooo {
+        height: 700px;
+        width: 700px;
+    }
+
+    .inner2 {
+        // border: 2px solid red;
+        transform: translate(-13%, 52%);
+        svg {
+            #cls-o2 {
+                fill: transparent;
+            }
+            path {
+                -webkit-filter: drop-shadow( -2px -2px 5px rgba(0, 0, 0, .7));
+                filter: drop-shadow( -2px -2px 5px rgba(0, 0, 0, .7));
+            }
+        }
+    }
+}
+
+// .arrow2 {
+//     position: absolute;
+//     top: 185vh;
+//     left: 3.5%;
+//     border: 2px solid red;;
+//     // background: black;
+//     a {
+//         color: white;
+//         i {
+//             color: yellow;
+//             font-size: 50px;
+//         }
+//     }
+// }

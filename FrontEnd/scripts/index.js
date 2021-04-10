@@ -74,51 +74,6 @@ anime({
 
 })
 
-let down = anime({
-    targets: "#cls-oo",
-    fill: '#f73c57',
-    duration: 400,
-    easing:'linear',
-    autoplay: false
-})
-let up = anime({
-    targets: "#cls-ii",
-    fill: '#8664ad',
-    duration: 400,
-    easing:'linear',
-    autoplay: false
-})
-let down_rev = anime({
-    targets: "#cls-oo",
-    fill: '#8664ad',
-    duration: 400,
-    easing:'linear',
-    autoplay: false
-})
-let up_rev = anime({
-    targets: "#cls-ii",
-    fill: '#f73c57',
-    duration: 400,
-    easing:'linear',
-    autoplay: false
-})
-
-var lastScrollTop = 0;
-
-window.addEventListener("scroll", function(){ 
-   var st = window.pageYOffset || document.documentElement.scrollTop;
-   if (st > lastScrollTop){
-        down.play();
-        up.play()
-        console.log("down");
-   } else if(st < lastScrollTop) {
-       up_rev.play();
-       down_rev.play();
-       console.log("up");
-   }
-   lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
-}, false);
-
 anime({
     targets: "div #download-btn a",
     easing: "easeInOutQuad",
@@ -126,7 +81,13 @@ anime({
     duration: 200,
     delay: 100
 })
-
+anime({
+    targets: "div .down-arrow a",
+    easing: "easeInOutQuad",
+    opacity: 1,
+    duration: 200,
+    delay: 500
+})
 
 anime({
     targets: "div #download-btn a i",
