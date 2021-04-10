@@ -420,6 +420,16 @@ select:focus, button:focus{
     max-height: 320px;
     box-shadow: 2px 2px 4px #000c31 inset, -2px -2px 4px #000c31 inset;
 }
+// Added from here
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    .block {
+        width: 40%;
+        box-shadow: 4px 4px 7px #000c31;
+    }
+}
 // .arrow2 {
 //     position: absolute;
 //     top: 185vh;

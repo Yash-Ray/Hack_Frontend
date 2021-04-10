@@ -516,4 +516,20 @@ select:focus, button:focus {
   -webkit-box-shadow: 2px 2px 4px #000c31 inset, -2px -2px 4px #000c31 inset;
           box-shadow: 2px 2px 4px #000c31 inset, -2px -2px 4px #000c31 inset;
 }
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px;
+}
+
+.container .block {
+  width: 40%;
+  -webkit-box-shadow: 4px 4px 7px #000c31;
+          box-shadow: 4px 4px 7px #000c31;
+}
 /*# sourceMappingURL=index.css.map */
