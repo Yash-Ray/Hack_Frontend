@@ -60,44 +60,45 @@ anime({
 })
 anime({
     targets: "svg #cls-oo",
-    easing: 'easeInOutBounce',
+    easing: 'easeOutInQuad',
+    // easing: 'easeOutElastic(1, .4)',
     fill: '#8664ad',
-    duration: 600,
+    duration: 200,
 
 })
 anime({
     targets: "svg #cls-ii",
-    easing: 'easeInOutBounce',
+    easing: 'easeInOutQuad',
     fill: '#f73c57',
-    duration: 600,
+    duration: 200,
 
 })
 
 let down = anime({
     targets: "#cls-oo",
     fill: '#f73c57',
-    duration: 1500,
+    duration: 400,
     easing:'easeInOutQuad',
     autoplay: false
 })
 let up = anime({
     targets: "#cls-ii",
     fill: '#8664ad',
-    duration: 1500,
+    duration: 400,
     easing:'easeInOutQuad',
     autoplay: false
 })
 let down_rev = anime({
     targets: "#cls-oo",
     fill: '#8664ad',
-    duration: 1500,
+    duration: 400,
     easing:'easeInOutQuad',
     autoplay: false
 })
 let up_rev = anime({
     targets: "#cls-ii",
     fill: '#f73c57',
-    duration: 1500,
+    duration: 400,
     easing:'easeInOutQuad',
     autoplay: false
 })
