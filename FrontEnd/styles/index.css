@@ -24,6 +24,52 @@ body {
   width: 100vw;
 }
 
+#download-btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  margin: 5px;
+  position: absolute;
+  top: 4%;
+  left: 2%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+#download-btn a {
+  font-size: 30px;
+  color: #9098bd;
+  text-decoration: none;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+  opacity: 0;
+}
+
+#download-btn a i {
+  padding: 5px 0px 0px 5px;
+  margin: 5px 5px 0px 5px;
+  -webkit-transition: 0.1s all ease-in-out;
+  transition: 0.1s all ease-in-out;
+}
+
+#download-btn a:hover {
+  color: #4c5064;
+}
+
+#download-btn a:hover i {
+  color: #4c5064;
+}
+
 .bulb {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -191,6 +237,37 @@ body {
 .herotxt .inner-hero svg path {
   -webkit-filter: drop-shadow(4px 4px 3px rgba(0, 0, 0, 0.7));
   filter: drop-shadow(4px 4px 3px rgba(0, 0, 0, 0.7));
+}
+
+.down-arrow {
+  height: 50px;
+  width: 50px;
+  padding: 5px;
+  margin: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 9%;
+  right: 9%;
+}
+
+.down-arrow a i {
+  font-size: 50px;
+  color: #9098bd;
+  text-shadow: 1px 1px 3px #4c5064;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+}
+
+.down-arrow a i:hover {
+  text-shadow: 2px 2px 5px #504f4f;
 }
 
 .gears .outer {

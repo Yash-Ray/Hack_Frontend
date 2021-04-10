@@ -60,17 +60,17 @@ anime({
 })
 anime({
     targets: "svg #cls-oo",
-    easing: 'easeOutInQuad',
+    easing: 'easeOutInBounce',
     // easing: 'easeOutElastic(1, .4)',
     fill: '#8664ad',
-    duration: 200,
+    duration: 400,
 
 })
 anime({
     targets: "svg #cls-ii",
-    easing: 'easeInOutQuad',
+    easing: 'easeInOutBounce',
     fill: '#f73c57',
-    duration: 200,
+    duration: 400,
 
 })
 
@@ -78,28 +78,28 @@ let down = anime({
     targets: "#cls-oo",
     fill: '#f73c57',
     duration: 400,
-    easing:'easeInOutQuad',
+    easing:'linear',
     autoplay: false
 })
 let up = anime({
     targets: "#cls-ii",
     fill: '#8664ad',
     duration: 400,
-    easing:'easeInOutQuad',
+    easing:'linear',
     autoplay: false
 })
 let down_rev = anime({
     targets: "#cls-oo",
     fill: '#8664ad',
     duration: 400,
-    easing:'easeInOutQuad',
+    easing:'linear',
     autoplay: false
 })
 let up_rev = anime({
     targets: "#cls-ii",
     fill: '#f73c57',
     duration: 400,
-    easing:'easeInOutQuad',
+    easing:'linear',
     autoplay: false
 })
 
@@ -119,6 +119,22 @@ window.addEventListener("scroll", function(){
    lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
 }, false);
 
+anime({
+    targets: "div #download-btn a",
+    easing: "easeInOutQuad",
+    opacity: 1,
+    duration: 200,
+    delay: 100
+})
+
+
+anime({
+    targets: "div #download-btn a i",
+    rotate: 360,
+    easing: 'easeInOutSine',
+    duration: 800,
+    delay:200
+})
 
 // let bulbsml = anime({
 //     targets: "div #bulb-small",

@@ -23,6 +23,41 @@ body {
     width: 100vw;
     // background: #000;
 }
+
+#download-btn {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+    position: absolute;
+    top: 4%;
+    left: 2%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    a {
+        font-size: 30px;
+        color: #9098bd;
+        text-decoration: none;
+        transition: 0.5s all ease-in-out;
+        opacity: 0;
+        i {
+            // opacity: 0;
+            padding: 5px 0px 0px 5px;
+            margin: 5px 5px 0px 5px;
+            transition: 0.1s all ease-in-out;
+        }
+    }
+}
+#download-btn a:hover {
+    color: #4c5064;
+    i {
+        color: #4c5064;
+        // transform: rotate(360deg);
+    }
+}
+
 .bulb {
     display: flex;
     flex-direction: row;
@@ -161,6 +196,34 @@ body {
     }
 }
 
+.down-arrow {
+    height: 50px;
+    width: 50px;
+    // border: 2px solid red;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 9%;
+    right: 9%;
+    a {
+        i {
+            font-size: 50px;
+            color: #9098bd;
+            text-shadow: 1px 1px 3px #4c5064;
+            transition: 0.5s all ease-in-out;
+        }
+    }
+}
+.down-arrow {
+    a {
+        i:hover {
+            text-shadow: 2px 2px 5px rgb(80, 79, 79);
+        }
+    }
+}
 .gears {
     .outer {
         // border: 1px solid red;
